@@ -5,12 +5,17 @@ from pydantic import BaseModel
 from typing import List
 from pymongo import MongoClient
 from bson import ObjectId
-
+import yaml
 # Define your FastAPI app
 app = FastAPI()
+   # Load the configuration from the YAML file
+with open("config.yml", "r") as config_file:
+    config = yaml.safe_load(config_file)
 
+# Access the MongoDB URI from the configuration
+mongodb_uri = config["books_api"]["mongodb_uri"]
 # Connect to MongoDB Atlas
-client = MongoClient("mongodb+srv://karvika78601:rY9JN8s3QEgHyFoN@librarymanagementcluste.vthwmid.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementCluster")
+client = MongoClient(mongodb_uri)
 db = client["library_management"]
 books_collection = db["books"]
 
