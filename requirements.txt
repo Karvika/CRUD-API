@@ -1,8 +1,7 @@
-bson
-pymongo
+bson==0.5.10
+pymongo==3.12.0
 typing
 pydantic
 fastapi
 PyYAML
-gunicorn
-
+uvicorn
