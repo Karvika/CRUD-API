@@ -3,5 +3,6 @@ pymongo
 typing
 pydantic
 fastapi
-yaml
+PyYAML
 gunicorn
+
