@@ -1,4 +1,4 @@
 # config.yml
 
 books_api:
-  mongodb_uri: "mongodb+srv://karvika78601:rY9JN8s3QEgHyFoN@librarymanagementcluste.vthwmid.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementCluster"
+  mongodb_uri: "mongodb+srv://your_cluster.vthwmid.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementCluster"
